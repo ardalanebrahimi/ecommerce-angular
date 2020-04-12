@@ -12,16 +12,16 @@
 </div>
 <div class="row">
     <div class="col-xs-12">
-        <div class="btn-group">
+        <div class="btn-group" [appDropdownV1]="doOpen" (click)="doOpen = !doOpen">
             <button
                 type="button"
                 class="btn btn-primary dropdown-toggle">
-                Manage Recipe <span class="create"></span>
+                Manage Recipe <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
                 <li><a href="#">To Shopping List</a></li>
                 <li><a href="#">Edit Recipe</a></li>
-                <li><a href="#"></a>Delete Recipe</li>
+                <li><a href="#">Delete Recipe</a></li>
             </ul>
         </div>
     </div>
