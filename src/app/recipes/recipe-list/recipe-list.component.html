@@ -8,7 +8,6 @@
     <div class="col-xs-12">
         <app-recipe-item 
         *ngFor="let recipe of recipes;"
-        [recipe] = "recipe"
-        (onSelect) = "onListClick($event)"></app-recipe-item>
+        [recipe] = "recipe"></app-recipe-item>
     </div>
 </div>
